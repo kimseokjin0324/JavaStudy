@@ -2,11 +2,15 @@ package Study_static;
 
 public class Employee {
 
-    public static int serialNum = 1000;     //-static변수 선언
+    private static int serialNum = 1000;     //-static변수 선언 //-private 으로 변경
 
     private int employeeId;     //-아이디
     private String employeeName; //-이름
     private String department;  //-부서
+
+    public static int getSerialNum() {
+        return serialNum;
+    }
 
     public Employee() {
 
